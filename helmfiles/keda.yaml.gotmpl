@@ -1,14 +1,21 @@
+_kedaImage: &keda
+  registry: ghcr.io
+  repository: kedacore/keda
+  tag: 2.14.0@sha256:1
+
+_metricsApiServerImage: &metrics
+  registry: ghcr.io
+  repository: kedacore/keda-metrics-apiserver
+  tag: 2.14.0@sha256:2
+
+_webhooksImage: &webhooks
+  registry: ghcr.io
+  repository: kedacore/keda-admission-webhooks
+  tag: 2.14.0@sha256:3
+
+
 image:
-  keda:
-    registry: ghcr.io
-    repository: kedacore/keda
-    tag: 2.14.0@sha256:1
-  metricsApiServer:
-    registry: ghcr.io
-    repository: kedacore/keda
-    tag: 2.14.0@sha256:2
-  webhooks:
-    registry: ghcr.io
-    repository: kedacore/keda
-    tag: 2.14.0@sha256:3
+  keda: *keda
+  metricsApiServer: *metrics
+  webhooks: *webhooks
   pullPolicy: IfNotPresent
