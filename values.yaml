@@ -1,0 +1,6 @@
+node:
+  image:
+    pullPolicy: IfNotPresent
+    repository: docker.io/python
+    tag: 3.11.1
+
