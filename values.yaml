@@ -2,5 +2,5 @@ node:
   image:
     pullPolicy: IfNotPresent
     repository: docker.io/python
-    tag: 3.11.1
+    tag: 3.11.1@sha256:123
 
