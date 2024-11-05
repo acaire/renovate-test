@@ -5,7 +5,7 @@
   ],
   "helm-values": {
     "fileMatch": [
-      "^.+\.yaml\.gotmpl$"
+      ".+\.ya?ml(?:\.gotmpl)?$"
     ]
   }
 }
