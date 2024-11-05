@@ -1,0 +1,12 @@
+repositories:
+  - name: kedacore
+    url: https://kedacore.github.io/charts
+
+releases:
+  - name: keda-operator
+    namespace: keda-operator
+    chart: kedacore/keda
+    installed: true
+    version: 2.15.0
+    values:
+      - helmfiles/keda-operator.yaml.gotmpl
