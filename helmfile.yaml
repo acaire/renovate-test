@@ -7,6 +7,6 @@ releases:
     namespace: keda-operator
     chart: kedacore/keda
     installed: true
-    version: 2.15.0
+    version: 2.16.1
     values:
       - helmfiles/keda-operator.yaml.gotmpl
