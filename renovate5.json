@@ -8,6 +8,8 @@
       groupSlug: "nodejs-dependencies",
       matchPackageNames: ["node"],
       minimumReleaseAge: "3 days",
+      matchUpdateTypes: ["major"],
+      additionalBranchPrefix: "major"
     }
   ]
 }
