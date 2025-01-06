@@ -4,12 +4,7 @@
   rebaseWhen: "behind-base-branch",
   packageRules: [
     {
-      groupName: "NodeJS",
-      groupSlug: "nodejs-dependencies",
-      matchPackageNames: ["node"],
-      minimumReleaseAge: "3 days",
-      matchUpdateTypes: ["major"],
-      additionalBranchPrefix: "major"
+      matchDatasources: ["npm", "docker"],
     }
   ]
 }
