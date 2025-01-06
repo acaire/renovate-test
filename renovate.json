@@ -1,11 +1,13 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ],
-  "helm-values": {
-    "fileMatch": [
-      ".+\.ya?ml(?:\.gotmpl)?$"
-    ]
-  }
+  extends: ["config:best-practices"],
+  includePaths: [".nvmrc", "Dockerfile"],
+  rebaseWhen: "behind-base-branch",
+  packageRules: [
+    {
+      groupName: "NodeJS",
+      groupSlug: "nodejs-dependencies",
+      matchPackageNames: ["node"],
+      minimumReleaseAge: "3 days",
+    }
+  ]
 }
