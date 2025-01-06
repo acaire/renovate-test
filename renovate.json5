@@ -2,9 +2,4 @@
   extends: ["config:best-practices"],
   includePaths: [".nvmrc", "Dockerfile"],
   rebaseWhen: "behind-base-branch",
-  packageRules: [
-    {
-      matchDatasources: ["npm", "docker"],
-    }
-  ]
 }
